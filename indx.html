@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i love you</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 100 100%22%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2210%22 fill=%22%23ff0000%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3E%F0%9F%92%9C%3C/text%3E%3Canimate attributeName=%22opacity%22 values=%221;0;1%22 dur=%221s%22 repeatCount=%22indefinite%22/%3E%3C/svg%3E');
+            background-size: 10%;
+            overflow: hidden;
+        }
+
+        #container {
+            text-align: center;
+            font-size: 2em;
+        }
+
+        #you {
+            opacity: 0;
+            display: inline;
+            transition: opacity 1s;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        i love you<span id="you">r butt</span>
+    </div>
+
+    <script>
+        setTimeout(() => {
+            const you = document.getElementById('you');
+            you.style.opacity = '1';
+
+            document.body.style.background = "url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 100 100%22%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2210%22 fill=%22%23ff00ff%22 text-anchor=%22middle%22 dominant-baseline=%22middle%22%3E%F0%9F%8D%91%3C/text%3E%3C/svg%3E')";
+        }, 3000);
+    </script>
+</body>
+</html>
